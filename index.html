@@ -4,6 +4,27 @@
             body {
                 padding-bottom: 350px;
             }
+
+            #caixa {
+                height: 100px;
+                width: 100px;
+                background-color: blueviolet;
+                border-color: aqua;
+                border-radius: 12px;     /*   */
+                color: white;    /* Cor do Texto  */
+                padding: 15px;   /* Espaçamento Interno  */
+                margin: 10px;    /* Espaçamento Externo  */
+                text-align: center;
+                
+            }
+            .center{
+                text-align: center;
+                color: rgb(182, 182, 183);
+            }
+
+            td, th {
+border: 1px solid #ddd;
+            }
         </style>
 
         <!-- Título da Página -->
@@ -23,18 +44,101 @@
 
         <!-- Tag inline: tag que se fecha na mesma abertura -->
         <hr /> 
-        <img src="img/Messeri 104.jpg" 
-        width="500px"/>
-        
+            <h4>Imagem Messeri 104</h4>
+        <hr>
+            <img src="img/Messeri 104.jpg" 
+            width="500px"/>
+       
+
         <br> <!-- Quebra de Linha -->
         
         <hr> <!-- Linha Horizontal -->
-        <h4>Imagem Super Saturno</h4>
+            <h4>Imagem Super Saturno</h4>
         <hr>
         
         <img src="img/Super Saturno.jpg" alt="Planeta Super Saturno"
         width="500px"/>
+
+        <!--Tag "div" uma Tag de conteiner, diisão de código em blocos-->
+       <!-- <div id="caixa">
+            <h2>Teste</h2>
+        </div> -->
+
+        <!-- Para criar uma div com uma classe direto, basta usar o atalho "div.(nome da classe)" -->
+        <div class="center">
+            <span>Testando Span Centralizado</span>
+            <h3>Centralizar</h3>
+        </div>
+
+        <hr>
+        <!-- LISTA ORDENADA (numera os itens)-->
+        <h2>Lista Ordenada</h2>
+        <ol>
+            <li> <!--Item da Lista-->
+                <pre>git status</pre>
+            </li>
+            
+            <li>
+                <pre>git add .</pre>
+            </li>
+
+            <li>
+                <pre>git commit -m "[mensagem]"</pre>
+            </li>   
+
+        </ol>
+
+        <hr>
+        <!-- LISTA NÃO ORDENADA -->
+        <h2>Lista não Ordenada</h2>
         
+            <ul>
+                <li>
+                    <pre>Pastel de Queijo</pre>
+                </li>
+            
+                <li>
+                    <pre>Pastel de Carne</pre>
+                </li>
+
+                <li>
+                    <pre>Pastel de Frango</pre>
+                </li>
+            </ul>
+        
+        <hr>
+
+
+
+       <!-- TABELA -->
+        <table>    <!-- O código base da linha é (tr)-->
+            <h3>Filmes Favoritos</h3>
+            <!-- A primeira linha da tabela são colunas ( o código para a coluna é "th (Table Head)")-->
+            <tr>
+                <th>Nome</th>
+                <th>Gênero</th>
+                <th>Estrelas</th>
+            </tr>
+            <!-- As seguintes linhas são dados -->
+            <tr>
+                <td>Maze Runner</td>
+                <td>Ficção</td>
+                <td>10.0</td>
+            </tr>
+
+            <tr>
+                <td>Meu Malvado Favorito</td>
+                <td>Animação</td>
+                <td>7.7</td>
+            </tr>
+
+            <tr>
+                <td>Homem Aranha</td>
+                <td>Ficção</td>
+                <td>10.0</td>
+            </tr>
+
+        </table>        
         
 
     </body>
